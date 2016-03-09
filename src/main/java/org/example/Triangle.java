@@ -47,11 +47,13 @@ public class Triangle implements Shape {
 	}
 
 	public void draw() {
-		System.out.println("Draw Triangle:" + pointA + pointB+ pointC);
+		String tmpMsg = msg.getMessage("draw.triangle", new Object[] {pointA,pointB,pointC}, "draw triangle", null);
+		System.out.println(tmpMsg);
+		//System.out.println("Draw Triangle:" + pointA + pointB+ pointC);
 	}
 	@PostConstruct
 	public void initMethod(){
-		String tmpMsg = msg.getMessage("initmessage", null, "initialized", null);
+		String tmpMsg = msg.getMessage("init", null, "initialized", null);
 		System.out.println("Triangle " + tmpMsg);
 	}
 
