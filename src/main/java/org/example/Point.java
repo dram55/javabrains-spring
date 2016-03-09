@@ -23,7 +23,7 @@ public class Point {
 	
 	@PostConstruct
 	public void initMethod(){
-		System.out.println("Init Point Bean..");
+		System.out.println("Initialized Point Bean..");
 	}
 	
 	@Override

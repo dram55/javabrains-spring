@@ -7,11 +7,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		Shape s = (Shape)context.getBean("triangle");
+		Shape s = (Shape)context.getBean("line");
 		s.draw();
-		
-		System.out.println("Test");
-
 	}
-
 }
